@@ -246,7 +246,13 @@ NEXT_PUBLIC_ANTHROPIC_API_KEY=your_api_key
 
 ## 👨‍💻 Team
 
-Built for fintech innovation hackathon 🚀
+**Team Name:** QuadraTech
+
+**Members:**
+- Rubal (Role - Frontend / Backend / AI)
+- Harshita (Backend Development)
+- Manvi (Research, Testing & AI Strategy)
+- Pranjli (UI/UX Design)
 
 ---
 
