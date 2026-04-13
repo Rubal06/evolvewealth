@@ -1,159 +1,257 @@
-# EvolveWealth 🌱
-**Stop Collecting Pennies. Start Building Empires.**
+# 🚀 EvolveWealth — From Spending to Investing
 
-> Finvasia Innovation Hackathon 2026 — Problem Statement 2: Cashback Dependency
+> Stop collecting pennies. Start building empires.
 
----
-
-## What is EvolveWealth?
-
-EvolveWealth is a behavioral finance super app for Gen-Z Indians that 
-solves the Cashback Dependency problem. Instead of earning ₹50 cashback 
-that gets immediately re-spent, every transaction automatically rounds 
-up and invests the spare change into Digital Gold, ETFs, and Index Funds.
-
-The same ₹800/month most Indians waste on cashback rewards — invested 
-at 12% CAGR — becomes ₹1,84,166 over 10 years. That's the core insight 
-EvolveWealth is built on.
+EvolveWealth is an AI-powered behavioral finance platform that transforms everyday spending into automated micro-investments — helping users break impulsive habits and build long-term wealth.
 
 ---
 
-## The Problem
+## 🌍 Problem
 
-Every UPI super app uses cashback to create a dopamine loop that drives 
-repeat spending, not saving. Users feel rewarded while their long-term 
-wealth potential silently evaporates. This is Cashback Dependency — and 
-it's by design.
+Modern fintech apps rely heavily on **cashback rewards**, which:
 
-**Our answer:** Replace extrinsic cashback rewards with intrinsic wealth 
-growth. Same dopamine loop, redirected toward compounding.
+* Encourage more spending ❌
+* Provide short-term dopamine ⚡
+* Do not contribute to real wealth growth
 
----
-
-## Key Features
-
-**Auto Micro-Invest** — Every transaction triggers an automatic round-up 
-investment into the user's chosen asset. Spend ₹46 on coffee, ₹4 goes 
-into Digital Gold. No action required.
-
-**Anti-Impulse Shield** — Before an impulse purchase, an AI nudge shows 
-exactly how much that money grows if invested instead. Real numbers, real 
-future value, real decision.
-
-**Financial Growth Score** — A 0–1000 score tracks wealth-building 
-behavior across five tiers: Seed → Sapling → Wealth Builder → Freedom 
-Fighter → Empire Mode.
-
-**Gamified Milestones** — A Road to Freedom timeline with locked and 
-unlocked achievements that make saving genuinely addictive.
-
-**Wealth Simulator** — An interactive tool where users drag a slider to 
-see their exact 10-year projected wealth using the SIP compound formula.
-
-**Explainable Engine** — Every nudge, score change, and recommendation 
-shows its exact reasoning. No black boxes.
+Users unknowingly lose **thousands in long-term wealth potential** due to impulsive spending patterns.
 
 ---
 
-## Tech Stack
+## 💡 Solution
 
-| Layer | Technology |
-|---|---|
-| Framework | Next.js 14 (App Router) + TypeScript |
-| Styling | Tailwind CSS + Framer Motion |
-| Database | PostgreSQL via Supabase |
-| ORM | Prisma |
-| Auth | JWT + bcrypt |
-| Charts | Recharts |
-| State | Zustand |
+EvolveWealth flips the system:
 
----
+👉 Instead of rewarding spending, it **redirects it into investing**
 
-## Architecture
-Client (Next.js) → API Routes → Prisma ORM → PostgreSQL (Supabase)
-
-The app is built on Next.js 14 App Router with a clean separation between 
-server and client components. All data fetching happens through typed REST 
-API routes. Authentication is stateless JWT — tokens are validated on every 
-protected request. The nudge engine is a pure TypeScript rule evaluator that 
-requires no ML — just financial behavior heuristics applied to transaction 
-history.
-
-**Wealth projection formula (SIP):**
-FV = P × ((1 + r/12)^(12n) − 1) / (r/12) × (1 + r/12)
+* Detects impulse spending
+* Intercepts transactions using “Shield”
+* Converts spending into **micro-investments**
+* Visualizes long-term wealth impact
 
 ---
 
-## Getting Started
+## 🔥 Core Features
+
+### 🛡️ Shield Mode (Impulse Protection)
+
+* Select “danger zone” apps (Zomato, Myntra, etc.)
+* Intercepts purchases before completion
+* Suggests investing instead of spending
+
+---
+
+### 📊 Wealth Simulator
+
+* Shows future value of small investments
+* Uses SIP-based compounding logic
+* Visualizes long-term wealth growth
+
+---
+
+### 🧠 AI Behavior Analysis (LIVE)
+
+* Users input spending profile
+* AI generates:
+
+  * Impulse profile
+  * Risk windows
+  * Annual wealth drain
+  * Personalized recommendations
+
+Powered using **LLM (Anthropic API)**
+
+---
+
+### 📈 Intercept Heatmap
+
+* Weekly behavior visualization
+* Highlights peak impulse zones
+* Helps users understand patterns
+
+---
+
+### 🎯 Gamified Milestones
+
+* Progress-based system (Seed → Empire)
+* XP-based engagement
+* Encourages consistency and discipline
+
+---
+
+### 🔍 Explainable Engine
+
+* Every nudge is explained
+* Transparent decision-making
+* Builds user trust
+
+---
+
+## 🤖 AI & Machine Learning Integration
+
+EvolveWealth is designed as an **AI-first system**.
+
+### ✅ Current Implementation
+
+* LLM-powered behavioral analysis (Anthropic)
+* Prompt-engineered financial insights
+* Structured JSON response parsing
+
+### 🚀 Future AI Roadmap
+
+* 🧬 Spending Behavior Classification
+  → Impulsive Buyer / Disciplined Investor
+
+* 🔮 Predictive Nudge Engine
+  → Predict when user will overspend
+
+* 📊 Personalized Investment Strategy
+  → AI-based asset allocation
+
+* 🎮 Adaptive Gamification
+  → Dynamic milestones based on behavior
+
+* 🚨 Anomaly Detection
+  → Detect unusual spending spikes
+
+---
+
+## 🧠 How It Works
+
+1. User selects high-risk apps
+2. User attempts a purchase
+3. Shield intercepts transaction
+4. System calculates future value of money
+5. AI analyzes behavior patterns
+6. Dashboard updates:
+
+   * Wealth
+   * Score
+   * Streak
+7. User is nudged toward investing
+
+---
+
+## 🖥️ Screenshots
+
+### 🏠 Landing Page
+
+Clean, futuristic UI with strong messaging.
+
+### 🛡️ Shield Mode
+
+Select apps and simulate impulse interception.
+
+### 🧠 AI Report
+
+Personalized behavioral insights powered by AI.
+
+### 📊 Simulator
+
+Visual compounding growth over time.
+
+### 🎯 Milestones
+
+Gamified journey toward financial freedom.
+
+*(Add your images inside `/screenshots` folder and link them here)*
+
+---
+
+## 🧪 Demo Flow
+
+1. Open homepage
+2. Go to Shield tab
+3. Select danger apps
+4. Run simulation
+5. Fill AI form and generate report
+6. Explore simulator
+7. View milestones
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js, React, Tailwind CSS
+* **State Management:** Zustand
+* **Animations:** Framer Motion
+* **AI Integration:** Anthropic API (Claude)
+* **Charts & Visualization:** Custom + Chart.js
+* **Architecture:** Component-based modular design
+
+---
+
+## 📂 Project Structure
+
+```
+/app
+  /dashboard
+  /simulator
+  /shield
+
+/components
+  → UI components
+
+/lib
+  → Business logic
+
+/state
+  → Zustand store
+
+/types
+  → TypeScript definitions
+```
+
+---
+
+## ⚙️ Installation & Setup
 
 ```bash
-# Install
-git clone https://github.com/yourusername/evolvewealth
+git clone https://github.com/Rubal06/evolvewealth.git
 cd evolvewealth
 npm install
-
-# Configure
-cp .env.example .env
-# Add your DATABASE_URL, JWT_SECRET, NEXTAUTH_SECRET
-
-# Database
-npx prisma migrate dev --name init
-npm run prisma:seed
-
-# Run
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000)
+---
 
-**Demo account**
-Email:    arjun@demo.com
-Password: EvolveWealth2026
+## 🔐 Environment Variables
+
+Create a `.env` file:
+
+```
+NEXT_PUBLIC_ANTHROPIC_API_KEY=your_api_key
+```
 
 ---
 
-## API Overview
+## 🌟 Why EvolveWealth?
 
-| Endpoint | Method | Description |
-|---|---|---|
-| `/api/auth/register` | POST | Register new user, return JWT |
-| `/api/auth/login` | POST | Validate credentials, return JWT |
-| `/api/portfolio/summary` | GET | Total wealth, score, streak |
-| `/api/portfolio/holdings` | GET | All assets with returns |
-| `/api/transactions/feed` | GET | Last 20 micro-invest events |
-| `/api/transactions/roundup` | POST | Trigger round-up investment |
-| `/api/nudge/evaluate` | POST | Should we show a nudge? |
-| `/api/simulator/project` | GET | SIP compound projection |
-| `/api/score/growth-score` | GET | Score, tier, XP, percentile |
-| `/api/milestones/all` | GET | All milestones + unlock status |
+| Traditional Apps    | EvolveWealth           |
+| ------------------- | ---------------------- |
+| Reward spending     | Redirect spending      |
+| Short-term cashback | Long-term wealth       |
+| Passive tracking    | Active behavior change |
 
 ---
 
-## Hackathon Alignment
+## 🚀 Future Scope
 
-| Required | Built |
-|---|---|
-| Auto micro-invest cashback replacement | Round-up engine on every transaction |
-| Financial growth score | 0–1000 score, 5 tiers, XP, percentile |
-| Smart saving triggers | Rule-based nudge engine with full reasoning |
-| Gamified wealth milestones | Road to Freedom — 5 stages, locked/unlocked |
-
-Finvasia 2026 theme — *"Leveraging Emerging Trends for Financial Innovation"*
-
-Behavioral finance + micro-investing + explainable AI nudges is exactly 
-that emerging trend. EvolveWealth doesn't just use technology to move 
-money — it uses technology to change the relationship people have with money.
+* Real-time bank integration
+* Mobile app (React Native)
+* Reinforcement learning for nudges
+* Social investing & leaderboards
 
 ---
 
-## Roadmap
+## 👨‍💻 Team
 
-- UPI integration via Account Aggregator API
-- Real mutual fund routing via AMFI-registered intermediary  
-- ML-based nudge personalization
-- WhatsApp Business API push nudges
-- Social wealth milestones
+Built for fintech innovation hackathon 🚀
 
 ---
 
-*Built for Finvasia Innovation 2026 · EvolveWealth · Not financial advice*
+## 💬 Final Thought
+
+> “Don’t reward spending. Reward discipline.”
+
+EvolveWealth is not just a product — it’s a **behavioral shift**.
