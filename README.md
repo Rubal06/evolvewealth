@@ -134,20 +134,19 @@ EvolveWealth is designed as an **AI-first system**.
 ## 🖥️ Screenshots
 
 ### 🏠 Landing Page
-![Landing](./screenshots/Screenshot 2026-04-13 211309.png)
+![Landing](./screenshots/landing.png)
 
 ### 🛡️ Shield Mode
-![Shield](./screenshots/Screenshot 2026-04-13 211324.png)
+![Shield](./screenshots/shield.png)
 
 ### 🧠 AI Report
-![AI](./screenshots/Screenshot 2026-04-13 211335.png)
+![AI](./screenshots/ai.png)
 
 ### 📊 Simulator
-![Simulator](./screenshots/Screenshot 2026-04-13 211349.png)
+![Simulator](./screenshots/simulator.png)
 
 ### 🎯 Milestones
-![Milestones](./screenshots/Screenshot 2026-04-13 201631.png)
-
+![Milestones](./screenshots/milestones.png)
 ---
 
 ## 🧪 Demo Flow
