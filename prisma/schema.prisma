@@ -1,0 +1,97 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id                 String               @id @default(cuid())
+  email              String               @unique
+  passwordHash       String
+  name               String
+  phone              String
+  streakDays         Int                  @default(0)
+  tier               String               @default("Seed")
+  xp                 Int                  @default(0)
+  growthScore        Int                  @default(0)
+  portfolio          Portfolio?
+  transactions       Transaction[]
+  userMilestones     UserMilestone[]
+  nudgeLogs          NudgeLog[]
+  growthScoreHistory GrowthScoreHistory[]
+  createdAt          DateTime             @default(now())
+  updatedAt          DateTime             @updatedAt
+}
+
+model Portfolio {
+  id         String    @id @default(cuid())
+  userId     String    @unique
+  totalValue Float     @default(0)
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  holdings   Holding[]
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+model Holding {
+  id          String    @id @default(cuid())
+  portfolioId String
+  asset       String
+  amount      Float
+  units       Float
+  returnPct   Float
+  portfolio   Portfolio @relation(fields: [portfolioId], references: [id], onDelete: Cascade)
+}
+
+model Transaction {
+  id           String   @id @default(cuid())
+  userId       String
+  merchantName String
+  category     String
+  amount       Float
+  roundUp      Float
+  asset        String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  createdAt    DateTime @default(now())
+}
+
+model Milestone {
+  id             String          @id @default(cuid())
+  title          String
+  description    String
+  xpReward       Int
+  unlockCriteria String
+  userMilestones UserMilestone[]
+}
+
+model UserMilestone {
+  id          String    @id @default(cuid())
+  userId      String
+  milestoneId String
+  unlocked    Boolean   @default(false)
+  unlockedAt  DateTime?
+  user        User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  milestone   Milestone @relation(fields: [milestoneId], references: [id], onDelete: Cascade)
+}
+
+model NudgeLog {
+  id               String   @id @default(cuid())
+  userId           String
+  merchantName     String
+  message          String
+  projectedValue   Float
+  investmentAmount Float
+  triggeredAt      DateTime @default(now())
+  user             User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model GrowthScoreHistory {
+  id        String   @id @default(cuid())
+  userId    String
+  score     Int
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
