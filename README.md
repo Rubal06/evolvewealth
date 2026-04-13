@@ -135,26 +135,19 @@ EvolveWealth is designed as an **AI-first system**.
 ## 🖥️ Screenshots
 
 ### 🏠 Landing Page
-
-Clean, futuristic UI with strong messaging.
+![Landing](./screenshots/landing.png)
 
 ### 🛡️ Shield Mode
-
-Select apps and simulate impulse interception.
+![Shield](./screenshots/shield.png)
 
 ### 🧠 AI Report
-
-Personalized behavioral insights powered by AI.
+![AI](./screenshots/ai.png)
 
 ### 📊 Simulator
-
-Visual compounding growth over time.
+![Simulator](./screenshots/simulator.png)
 
 ### 🎯 Milestones
-
-Gamified journey toward financial freedom.
-
-*(Add your images inside `/screenshots` folder and link them here)*
+![Milestones](./screenshots/milestones.png)
 
 ---
 
